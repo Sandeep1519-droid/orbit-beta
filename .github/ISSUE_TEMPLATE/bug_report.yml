@@ -1,0 +1,45 @@
+name: Beta bug or usability report
+description: Report a failure or confusing interaction using sample content.
+title: "[Beta] "
+body:
+  - type: markdown
+    attributes:
+      value: "Reports are public. Do not include passwords, account details, private documents, serial numbers, or full logs. Security vulnerabilities belong in private reporting, not here."
+  - type: input
+    id: version
+    attributes:
+      label: Orbit version and build
+      placeholder: "0.9.1 / 9002 (Settings → About)"
+    validations:
+      required: true
+  - type: input
+    id: mac
+    attributes:
+      label: Mac model, chip and macOS version
+      placeholder: "MacBook Air M2, macOS 26.0; no serial number"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: "Include the tool or gesture, built-in/external trackpad, and relevant permission decisions."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result and exact error
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Frequency and optional sample
+      description: "Use non-sensitive sample content. Review and crop any screenshot before attaching."
